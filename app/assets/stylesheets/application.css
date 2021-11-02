@@ -14,11 +14,4 @@
  *= require_self
  */
 
-	
-body{
-	
-  	background-image: url('/maintenance/arikmaintenance.png');
-  	background-position: cover;
-  }
-
-
+ body{}

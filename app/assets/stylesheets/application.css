@@ -14,4 +14,12 @@
  *= require_self
  */
 
- body{}
+ body{
+
+ 	img {
+ 		width: 100%;
+ 		height: auto;
+ 		background-size: contain;
+ 	}
+
+ }

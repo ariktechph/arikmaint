@@ -1,24 +1,25 @@
-<br/>
-	<nav class="navbar navbar-expand-lg navbar-light bg-*">
-	  <form class="form-inline">
-	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-	    <div class="navbar-nav">
-	      <button class="btn btn-danger mr-3" type="button">
-	      	<%= link_to "Home", root_path, class:"nav-link" %>
-	      </button>
-	      <button class="btn btn-danger mr-3" type="button">
-	      	<%= link_to "Our Products", home_ourproducts_path, class:"nav-link" %>
-	      </button>
-	      <button class="btn btn-danger mr-3" type="button">
-	      	<%= link_to "Our Services", home_ourservices_path, class:"nav-link" %>
-	      </button>
-	      <button class="btn btn-danger mr-3" type="button">
-	      	<%= link_to "About Us", home_aboutus_path, class:"nav-link" %>
-	      </button>
-	      <button class="btn btn-danger mr-3" type="button">
-	      	<%= link_to "Contact Us", home_contactus_path, class:"nav-link" %>
-	      </button>
-	    </div>
-	  </div>
-	  </form>
-	</nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-*">
+  <a class="navbar-brand" href='#'>Arik General Merchadising</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <%= link_to "Home", root_path, class:"nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Our Products", home_ourproducts_path, class:"nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Our Services", home_ourservices_path, class:"nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "About Us", home_aboutus_path, class:"nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Contact Us", home_contactus_path, class:"nav-link" %>
+      </li>
+    </ul>
+  </div>
+</nav>

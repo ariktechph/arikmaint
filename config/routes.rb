@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get 'home/ourservices'
   get 'home/aboutus'
   get 'home/contactus'
+  get 'home/cshotline'
 end

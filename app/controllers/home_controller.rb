@@ -9,4 +9,6 @@ class HomeController < ApplicationController
 	end
 	def contactus
 	end
+	def cshotline
+	end
 end

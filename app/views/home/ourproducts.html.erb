@@ -1,11 +1,99 @@
-<body>
-<div class="bg">
 <%= render 'home/header' %>
+<body>
 
-<div style="padding: 10% 10% 0px 10%">
-	<h2  style="font-size: 3vw; text-align: center; font-weight: lighter;">Our Products</h2>
-	
-</div>
-<img src="/infoweb/final/prod_whole.png">
-</div>
+
+
+
+
+	<br/>
+	<div class="nav-center">
+	<div class="tab">
+	  <button class="tablinks" onclick="openProduct(event, 'Tablets')" id="defaultOpen">Tablets</button>
+	  <button class="tablinks" onclick="openProduct(event, 'OfficeFurniture')">Office Furniture</button>
+	  <button class="tablinks" onclick="openProduct(event, 'OfficeSupplies')">Office Supplies</button>
+	  <button class="tablinks" onclick="openProduct(event, 'Computers')">Computers</button>
+	  <button class="tablinks" onclick="openProduct(event, 'CCTV')">CCTV</button>
+	  <button class="tablinks" onclick="openProduct(event, 'MedicalKits')">Medical Kits</button>
+	</div>
+	</div>
+
+
+	<div id="Tablets" class="tabcontent">
+		<h5 style="font-weight: bolder; color: black">AVAILABLE NOW</h5>
+	  	<h2 style="font-weight: bolder;">ABC Tech Tablets</h2>
+	  	<h6 style="color: black">LEVEL UP YOUR PRODUCTIVITY</h6>
+	  	<div class="nav-center">
+	  		<form class="form-inline" style="margin-left: 10%; margin-right: 10%;">
+	  			<div class="img-with-text">
+			  		<img src="/newinfoweb/phtablets2.png" width="40%">
+			  		<h5 style="font-weight: bolder;">Tablet 1.1</h5>
+			  		<h6 style="color: black">4GB RAM, 64GB Memory</h6>
+			  		<button class="button button1" style="font-weight: bolder;">More Info</button>
+			  	</div>
+			  	<div class="img-with-text">
+			  		<img src="/newinfoweb/phtablets2.png" width="40%">
+			  		<h5 style="font-weight: bolder;">Tablet 2.1</h5>
+			  		<h6 style="color: black">3GB RAM, 64GB Memory</h6>
+			  		<button class="button button1" style="font-weight: bolder;">More Info</button>
+			  	</div>
+			  	<div class="img-with-text">
+			  		<img src="/newinfoweb/phtablets2.png" width="40%">
+			  		<h5 style="font-weight: bolder;">Tablet 3.1</h5>
+			  		<h6 style="color: black">6GB RAM, 64GB Memory</h6>
+			  		<button class="button button1" style="font-weight: bolder;">More Info</button>
+			  	</div>
+	  		</form>
+	  </div>
+	</div>
+
+	<div id="OfficeFurniture" class="tabcontent">
+	  <h3 style="font-weight: bolder;">Office Furniture</h3>
+		</br>
+	  	<h4 style="font-weight: bolder; color: black;">Stay Tuned!</h4> 
+	</div>
+
+	<div id="OfficeSupplies" class="tabcontent">
+	  <h3 style="font-weight: bolder;">Office Supplies</h3>
+	  </br>
+	  <h4 style="font-weight: bolder; color: black;">Stay Tuned!</h4> 
+	</div>
+
+	<div id="Computers" class="tabcontent">
+	  <h3 style="font-weight: bolder;">Computers</h3>
+	  </br>
+	  <h4 style="font-weight: bolder; color: black;">Stay Tuned!</h4> 
+	</div>
+
+	<div id="CCTV" class="tabcontent">
+	  <h3 style="font-weight: bolder;">CCTV</h3>
+	  </br>
+	  <h4 style="font-weight: bolder; color: black;">Stay Tuned!</h4> 
+	</div>
+
+	<div id="MedicalKits" class="tabcontent">
+	  <h3 style="font-weight: bolder;">Medical Kits</h3>
+	  </br>
+	  <h4 style="font-weight: bolder; color: black;">Stay Tuned!</h4> 
+	</div>
+
+	<script>
+	function openProduct(evt, productName) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+	    tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+	    tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  document.getElementById(productName).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
+	</script>
+
+
 </body>

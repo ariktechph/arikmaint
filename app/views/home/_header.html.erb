@@ -1,25 +1,48 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-*">
-  <a class="navbar-brand" href='#'>Arik General Merchadising</a>
+
+  
+  <div class="d-flex justify-content-center">
+     <form class="form-inline">
+      <img src="/newinfoweb/ariklogo.png" width="110" height="50" alt="" hspace="20">
+      
+      <input class="form-control" type="search" size="50" placeholder="Search entire store here" aria-label="Search" style="margin-right: 20px">
+      <button type="submit" style="border: 0;">
+        <img src="/newinfoweb/iconsearch.png" width="30" height="30" alt="" style="background-color: #f94617;">
+      </button>
+      
+    </form>
+  </div>
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
+  
+  <div class="collapse navbar-collapse p-4" id="navbarNav">
+    <ul class="navbar-nav m-auto py-0">
+      
       <li class="nav-item active">
-        <%= link_to "Home", root_path, class:"nav-link" %>
+        <%= link_to "Home", root_path, class:"myNavbar" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Our Products", home_ourproducts_path, class:"nav-link" %>
+        <%= link_to "| Our Products", home_ourproducts_path, class:"myNavbar" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Our Services", home_ourservices_path, class:"nav-link" %>
+        <%= link_to "| Our Services", home_ourservices_path, class:"myNavbar" %>
       </li>
       <li class="nav-item">
-        <%= link_to "About Us", home_aboutus_path, class:"nav-link" %>
+        <%= link_to "| About Us", home_aboutus_path, class:"myNavbar" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Contact Us", home_contactus_path, class:"nav-link" %>
+        <%= link_to "| Contact Us", home_contactus_path, class:"myNavbar" %>
       </li>
+      <li class="nav-item">
+        <%= link_to "| Customer Service Hotline", home_cshotline_path, class:"myNavbar" %>
+      </li>
+    
     </ul>
   </div>
+
 </nav>

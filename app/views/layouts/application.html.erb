@@ -79,11 +79,11 @@
 body {
   font-family: var(--font-family);
   color: var(--black);
-  font-size: 16px;
+  font-size: 14px;
 }
 @media (max-width: 991px) {
   body {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -208,12 +208,13 @@ p {
   .container {
     padding-left: 20px;
     padding-right: 20px;
+    position: relative;
   }
 }
 
 .btn {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   text-align: center;
   letter-spacing: 0.08em;
@@ -1185,6 +1186,7 @@ p {
   border: 1px solid var(--light-1);
   border-radius: 10px;
   margin-bottom: 30px;
+  text-align: center;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -1211,6 +1213,10 @@ p {
   background: var(--white);
   border: 2px solid var(--primary);
   display: flex;
+  position: absolute;
+   top: 0%;
+   left: 50%;
+   transform: translate(-50%, 0%);
   align-items: center;
   justify-content: center;
   color: var(--primary);
@@ -1242,7 +1248,7 @@ p {
   border: 1px solid transparent;
 }
 .services-eight .single-services .service-content h4 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -1384,7 +1390,7 @@ p {
   display: inline-block;
   position: relative;
   padding-left: 15px;
-  font-size: 55px;
+  font-size: 30px;
 }
 .pricing-style-fourteen .currency {
   font-weight: 400;
@@ -1423,8 +1429,66 @@ p {
   color: var(--dark-3);
 }
 
+#divFaq {
+  padding: 50px 0;
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
 
+#divTechSupp {
+  padding: 50px 0;
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
 
+#divCustSupp {
+  padding: 50px 0;
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.supp-section {
+  border: 1px solid var(--light-1);
+  border-radius: 10px;
+  margin-top: 30px;
+
+  background-color: var(--white);
+  transition: all 0.4s ease;
+  padding: 20px 15px;
+  text-align: left;
+  z-index: 0;
+}
+
+.faq-question {
+  border: 1px solid var(--light-1);
+  border-radius: 10px;
+  margin-top: 30px;
+
+  background-color: var(--white);
+  transition: all 0.4s ease;
+  padding: 20px 15px;
+  text-align: left;
+  z-index: 0;
+}
+
+.cust-support {
+  border: 1px solid var(--light-1);
+  border-radius: 10px;
+  margin-top: 30px;
+
+  background-color: var(--white);
+  transition: all 0.4s ease;
+  padding: 20px 15px;
+  text-align: center;
+  z-index: 0;
+}
+
+.cust-support:hover {
+  box-shadow: var(--shadow-4);
+}
 
 /* ===== Buttons Css ===== */
 .call-action .inner-content .light-rounded-buttons .primary-btn-outline {
